@@ -13,8 +13,8 @@
 2. The console will print '150' because the last reassignment of 'discountedPrice' happened at 'i' = 2, which resulted in the calculation 300 * (1 - 0.5) = 150.
 3. '150' will again be printed out, as the calculation done by "Math.round(discountedPrice * 100) / 100" will not actually round anything.
 4. The function will return the array: [50, 100, 150]. This is because the function took the original array [100, 200, 300] and applied a 50% discount to all the prices.
-5. Line 12 will cause an error because 'i' was not defined in its scope.
-6. Line 13 will cause an error because 'discountedPrice' was not defined in its scope.
+5. Line 12 will cause an error because 'i' was not defined in its scope; it was declared in the for loop parameters.
+6. Line 13 will cause an error because 'discountedPrice' was not defined in its scope; it was defined in the for loop.
 7. '150' is printed out because 'finalPrice' was defined in line 14's scope at the beginning of the function.
 8. The function will return [50, 100, 150]; every variable was accessed in its right scope that it was defined, causing no errors. The calculations were all able to be done correctly.
 9. Line 11 will cause an error because 'i' was defined in the scope of the for loop, which is out of the scope of line 11.
